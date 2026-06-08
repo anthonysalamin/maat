@@ -29,16 +29,15 @@
     /* ─── Decorative circle ─── */
     .deco { position: absolute; border-radius: 50%; pointer-events: none; }
 
-    /* ─── Header badge (teal or gold circle + logo) ─── */
+    /* ─── Header badge (brand circle + logomark) ─── */
     .badge {
       position: absolute;
       left: 58px; top: 48px;
       width: 60px; height: 60px;
       border-radius: 50%;
+      background: #223f31;
       display: flex; align-items: center; justify-content: center;
     }
-    .badge--teal { background: #2C5F4F; }
-    .badge--gold { background: #C19A3B; }
 
     /* ─── Section label ─── */
     .label {
@@ -102,9 +101,11 @@
   <div class="deco" style="left:902px;top:-211px;width:624px;height:624px;background:#2C5F4F;opacity:.22;"></div>
   <div class="deco" style="left:1056px;top:346px;width:480px;height:480px;background:#C19A3B;opacity:.12;"></div>
 
-  <!-- Logo mark: white circle with M -->
-  <div style="position:absolute;left:58px;top:144px;width:91px;height:91px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;">
-    <span style="font-family:Georgia,'Times New Roman',serif;font-size:38pt;color:#163528;font-weight:700;line-height:1;margin-top:-2px;">M</span>
+  <!-- Logo mark -->
+  <div style="position:absolute;left:58px;top:144px;width:91px;height:91px;border-radius:50%;background:#223f31;display:flex;align-items:center;justify-content:center;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="54" height="54">
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
   </div>
 
   <!-- MAAT wordmark -->
@@ -136,9 +137,8 @@
 <!-- ════════════════════════════════ SLIDE 2 · THE PROBLEM ══════════════════════════════ -->
 <section class="slide slide--light" id="slide-2">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -195,9 +195,8 @@
 <!-- ════════════════════════════════ SLIDE 3 · WHY NOW ══════════════════════════════════ -->
 <section class="slide slide--light" id="slide-3">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -250,9 +249,8 @@
 <!-- ════════════════════════════════ SLIDE 4 · THE SOLUTION ═════════════════════════════ -->
 <section class="slide slide--light" id="slide-4">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -312,9 +310,8 @@
 <!-- ════════════════════════════════ SLIDE 5 · BEFORE & AFTER ═══════════════════════════ -->
 <section class="slide slide--light" id="slide-5">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -360,9 +357,8 @@
 <!-- ════════════════════════════════ SLIDE 6 · WHY CUSTOMERS BUY ═══════════════════════ -->
 <section class="slide slide--light" id="slide-6">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -418,9 +414,8 @@
 <!-- ════════════════════════════════ SLIDE 7 · COMPETITIVE POSITIONING ═════════════════ -->
 <section class="slide slide--light" id="slide-7">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -512,9 +507,8 @@
 <!-- ════════════════════════════════ SLIDE 8 · FOUNDER & ORIGIN ═════════════════════════ -->
 <section class="slide slide--light" id="slide-8">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -585,9 +579,8 @@
 <!-- ════════════════════════════════ SLIDE 9 · VALIDATION ══════════════════════════════ -->
 <section class="slide slide--light" id="slide-9">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -674,9 +667,8 @@
 <!-- ════════════════════════════════ SLIDE 10 · MARKET, MODEL & GTM ════════════════════ -->
 <section class="slide slide--light" id="slide-10">
 
-  <div class="badge badge--teal">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
@@ -752,10 +744,8 @@
   <!-- Decorative circle -->
   <div class="deco" style="left:979px;top:-192px;width:576px;height:576px;background:#2C5F4F;opacity:.20;"></div>
 
-  <!-- Header badge: gold -->
-  <div class="badge badge--gold">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
-      <rect fill="#223f31" width="141.99" height="141.99"/>
+  <div class="badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="36" height="36">
       <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
     </svg>
   </div>
