@@ -134,12 +134,6 @@ body {
   justify-content: center;
 }
 
-.badge--cover {
-  top: 144px;
-  width: 91px;
-  height: 91px;
-}
-
 .label {
   position: absolute;
   left: 136px;
@@ -241,11 +235,18 @@ body {
 /* ─── Cover slide ─── */
 .cover__wordmark {
   position: absolute;
-  left: 168px;
+  left: var(--margin-x);
   top: 149px;
   height: 86px;
   display: flex;
   align-items: center;
+}
+
+.cover__logo {
+  display: block;
+  height: 69px;
+  width: auto;
+  color: var(--color-logo);
 }
 
 .cover__subtitle {
