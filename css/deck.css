@@ -801,22 +801,52 @@ body {
 .founder-fit {
   position: absolute;
   left: 662px;
-  top: 196px;
+  top: 187px;
   width: 556px;
 }
 
-.founder-fit__title {
-  font-size: 19pt;
-  color: var(--color-dark-2);
-  font-weight: 600;
-  margin-bottom: 20px;
+.founder-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.founder-profile__avatar {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.founder-profile__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.founder-profile__name {
+  font-size: 24pt;
+  color: var(--color-dark);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.founder-profile__title {
+  font-size: 13.5pt;
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 .founder-list > li {
-  font-size: 13.5pt;
+  font-size: 13pt;
   color: var(--color-dark-2);
-  line-height: 1.5;
-  padding: 8px 0 8px 22px;
+  line-height: 1.45;
+  padding: 6px 0 6px 22px;
   border-bottom: 1px solid var(--color-border);
   position: relative;
 }
