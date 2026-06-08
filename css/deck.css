@@ -977,14 +977,14 @@ body {
 }
 
 .pricing-tiers {
-  margin-top: 34px;
+  margin-top: 28px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 6px;
 }
 
 .pricing-tier {
-  height: 74px;
+  height: 68px;
   background: var(--color-surface);
   border-left: 5px solid var(--color-mid);
   display: flex;
@@ -1015,15 +1015,30 @@ body {
   font-weight: 400;
 }
 
-.pricing-acv {
+.pricing-model {
   margin-top: 8px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  background: var(--color-surface-cool);
-  padding: 0 16px;
-  font-size: 11pt;
-  color: var(--color-muted);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.pricing-model__item {
+  background: var(--color-dark);
+  padding: 10px 14px;
+}
+
+.pricing-model__value {
+  font-size: 14pt;
+  color: var(--color-accent);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.pricing-model__label {
+  font-size: 10pt;
+  color: var(--color-sage);
+  margin-top: 3px;
+  line-height: 1.25;
 }
 
 /* ─── Vision & funding (slide 11) ─── */
