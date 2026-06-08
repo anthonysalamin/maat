@@ -380,6 +380,22 @@ body {
   padding: 2px 0;
 }
 
+.list-plain--bullet > li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.list-plain--bullet > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
 .list-plain--divided > li {
   font-size: 14.5pt;
   line-height: 1.6;
@@ -808,7 +824,7 @@ body {
 
 .founder-profile {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 22px;
   margin-bottom: 22px;
 }
@@ -833,14 +849,31 @@ body {
   color: var(--color-dark);
   font-weight: 700;
   line-height: 1.15;
-  margin-top: 8px;
   margin-bottom: 6px;
+}
+
+.founder-profile__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .founder-profile__title {
   font-size: 13.5pt;
   color: var(--color-accent);
   font-weight: 700;
+}
+
+.founder-profile__linkedin {
+  display: flex;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.founder-profile__linkedin svg {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .founder-list > li {
