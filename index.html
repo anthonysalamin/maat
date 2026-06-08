@@ -1,1 +1,831 @@
-<p>maat pitch deck</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>MAAT — Investor Pitch · June 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 1280px;
+      background: #b8b8b8;
+      font-family: 'Calibri', 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+    }
+
+    .deck { width: 1280px; }
+
+    /* ─── Slide base ─── */
+    .slide {
+      width: 1280px;
+      height: 720px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 4px;
+    }
+    .slide--dark  { background: #163528; }
+    .slide--light { background: #ffffff; }
+
+    /* ─── Decorative circle ─── */
+    .deco { position: absolute; border-radius: 50%; pointer-events: none; }
+
+    /* ─── Header badge (teal or gold circle + logo) ─── */
+    .badge {
+      position: absolute;
+      left: 58px; top: 48px;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .badge--teal { background: #2C5F4F; }
+    .badge--gold { background: #C19A3B; }
+
+    /* ─── Section label ─── */
+    .label {
+      position: absolute;
+      left: 136px; top: 40px;
+      font-size: 11pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #C19A3B;
+      text-transform: uppercase;
+    }
+
+    /* ─── Slide headline ─── */
+    .headline {
+      position: absolute;
+      left: 136px; top: 69px;
+      width: 1090px;
+      font-size: 25pt;
+      font-weight: 400;
+      color: #1A2B23;
+      line-height: 1.15;
+    }
+
+    /* ─── Footer ─── */
+    .footer-brand {
+      position: absolute;
+      left: 58px; top: 677px;
+      font-size: 9pt;
+      color: #6E7E76;
+    }
+    .footer-num {
+      position: absolute;
+      right: 48px; top: 677px;
+      font-size: 9pt;
+      color: #6E7E76;
+    }
+
+    /* ─── Stat box (dark, used in slide 6) ─── */
+    .stat-box {
+      position: absolute;
+      width: 274px; height: 187px;
+      background: #163528;
+      padding: 20px 18px 18px 24px;
+    }
+
+    /* ─── Dark banner strip ─── */
+    .banner {
+      position: absolute;
+      background: #163528;
+      padding: 12px 34px;
+    }
+  </style>
+</head>
+<body>
+<div class="deck">
+
+<!-- ════════════════════════════════ SLIDE 1 · COVER ═══════════════════════════════════ -->
+<section class="slide slide--dark" id="slide-1">
+
+  <!-- Decorative circles -->
+  <div class="deco" style="left:902px;top:-211px;width:624px;height:624px;background:#2C5F4F;opacity:.22;"></div>
+  <div class="deco" style="left:1056px;top:346px;width:480px;height:480px;background:#C19A3B;opacity:.12;"></div>
+
+  <!-- Logo mark: white circle with M -->
+  <div style="position:absolute;left:58px;top:144px;width:91px;height:91px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;">
+    <span style="font-family:Georgia,'Times New Roman',serif;font-size:38pt;color:#163528;font-weight:700;line-height:1;margin-top:-2px;">M</span>
+  </div>
+
+  <!-- MAAT wordmark -->
+  <div style="position:absolute;left:168px;top:149px;height:86px;display:flex;align-items:center;">
+    <span style="font-size:52pt;color:#fff;font-weight:700;letter-spacing:.04em;line-height:1;">MAAT</span>
+  </div>
+
+  <!-- Subtitle -->
+  <div style="position:absolute;left:58px;top:288px;width:883px;">
+    <p style="font-size:30pt;color:#fff;line-height:1.25;font-weight:400;">The revenue-to-margin operating system<br>for project-based companies.</p>
+  </div>
+
+  <!-- Tagline -->
+  <div style="position:absolute;left:58px;top:456px;width:960px;">
+    <p style="font-size:15pt;color:#8FB3A3;line-height:1.3;">Born from a real construction project.&ensp;Beachhead: Swiss construction &amp; engineering SMEs.</p>
+  </div>
+
+  <!-- Gold rule -->
+  <div style="position:absolute;left:58px;top:547px;width:307px;height:2px;background:#C19A3B;"></div>
+
+  <!-- Date -->
+  <div style="position:absolute;left:58px;top:562px;">
+    <span style="font-size:14pt;color:#fff;">Investor pitch &nbsp;·&nbsp; June 2026</span>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 2 · THE PROBLEM ══════════════════════════════ -->
+<section class="slide slide--light" id="slide-2">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">The Problem</div>
+  <div class="headline">A firm learns a project lost money only once it's over.</div>
+
+  <!-- Descriptor -->
+  <div style="position:absolute;left:58px;top:149px;width:1162px;">
+    <p style="font-size:14pt;color:#6E7E76;line-height:1.35;">Project information is scattered across WhatsApp, email, Excel and paper — so no one has a live, trustworthy view of where a job stands or whether it is profitable.</p>
+  </div>
+
+  <!-- HOW WORK RUNS TODAY -->
+  <div style="position:absolute;left:58px;top:235px;width:566px;height:288px;background:rgba(243,246,244,0.85);">
+    <div style="position:absolute;left:0;top:0;width:8px;height:100%;background:#6E7E76;"></div>
+    <div style="position:absolute;left:28px;top:19px;width:518px;">
+      <p style="font-size:12pt;font-weight:700;color:#1A2B23;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px;">How Work Runs Today</p>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:13.5pt;color:#1A2B23;line-height:1.55;padding:2px 0;">Site decisions live in WhatsApp groups</li>
+        <li style="font-size:13.5pt;color:#1A2B23;line-height:1.55;padding:2px 0;">Budgets in personal Excel files</li>
+        <li style="font-size:13.5pt;color:#1A2B23;line-height:1.55;padding:2px 0;">Variations &amp; approvals buried in email</li>
+        <li style="font-size:13.5pt;color:#1A2B23;line-height:1.55;padding:2px 0;">Delivery notes &amp; invoices on paper</li>
+        <li style="font-size:13.5pt;color:#1A2B23;line-height:1.55;padding:2px 0;">Accounting in a separate system, weeks behind</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- WHAT IT CAUSES -->
+  <div style="position:absolute;left:653px;top:235px;width:566px;height:288px;background:rgba(250,237,233,0.85);">
+    <div style="position:absolute;left:0;top:0;width:8px;height:100%;background:#B4543F;"></div>
+    <div style="position:absolute;left:28px;top:19px;width:518px;">
+      <p style="font-size:12pt;font-weight:700;color:#8C3D2C;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px;">What It Causes</p>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:13.5pt;color:#5A2A1E;line-height:1.55;padding:2px 0;">No real-time view of project profitability</li>
+        <li style="font-size:13.5pt;color:#5A2A1E;line-height:1.55;padding:2px 0;">Cost overruns discovered too late to fix</li>
+        <li style="font-size:13.5pt;color:#5A2A1E;line-height:1.55;padding:2px 0;">Disputes &amp; warranty claims with no paper trail</li>
+        <li style="font-size:13.5pt;color:#5A2A1E;line-height:1.55;padding:2px 0;">"Who approved this?" — nobody can say</li>
+        <li style="font-size:13.5pt;color:#5A2A1E;line-height:1.55;padding:2px 0;">Project managers buried in admin, not on site</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Swiss reality banner -->
+  <div class="banner" style="left:58px;top:547px;width:1164px;height:101px;">
+    <p style="font-size:12.5pt;color:#C19A3B;font-weight:700;margin-bottom:7px;">The Swiss reality that makes it worse</p>
+    <p style="font-size:11.5pt;color:#DCE6E0;line-height:1.45;">High labour costs make every wasted hour expensive · a skilled-worker shortage makes admin on the wrong people unaffordable · rising compliance burden · tight margins leave no room for a project that quietly slips into the red.</p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">2</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 3 · WHY NOW ══════════════════════════════════ -->
+<section class="slide slide--light" id="slide-3">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Why Now</div>
+  <div class="headline">Three trends are converging now.</div>
+
+  <!-- 4 trend columns -->
+  <div style="position:absolute;left:57px;top:187px;width:274px;height:412px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:100%;height:11px;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:29px;top:38px;width:216px;">
+      <p style="font-size:46pt;color:#8FB3A3;font-weight:700;line-height:1;margin-bottom:18px;">01</p>
+      <p style="font-size:17pt;color:#1A2B23;font-weight:600;line-height:1.2;margin-bottom:10px;">Margins are tightening</p>
+      <p style="font-size:12.5pt;color:#6E7E76;line-height:1.45;">Construction &amp; engineering margins keep shrinking — wasted admin and late visibility hurt faster than ever.</p>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:354px;top:187px;width:274px;height:412px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:100%;height:11px;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:29px;top:38px;width:216px;">
+      <p style="font-size:46pt;color:#8FB3A3;font-weight:700;line-height:1;margin-bottom:18px;">02</p>
+      <p style="font-size:17pt;color:#1A2B23;font-weight:600;line-height:1.2;margin-bottom:10px;">Compliance is rising</p>
+      <p style="font-size:12.5pt;color:#6E7E76;line-height:1.45;">Administrative and audit burden keeps climbing — audit-ready traceability is no longer optional.</p>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:650px;top:187px;width:274px;height:412px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:100%;height:11px;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:29px;top:38px;width:216px;">
+      <p style="font-size:46pt;color:#8FB3A3;font-weight:700;line-height:1;margin-bottom:18px;">03</p>
+      <p style="font-size:17pt;color:#1A2B23;font-weight:600;line-height:1.2;margin-bottom:10px;">SMEs are going cloud</p>
+      <p style="font-size:12.5pt;color:#6E7E76;line-height:1.45;">SMEs are finally adopting software — but still lack end-to-end control from revenue to margin.</p>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:947px;top:187px;width:274px;height:412px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:100%;height:11px;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:29px;top:38px;width:216px;">
+      <p style="font-size:46pt;color:#8FB3A3;font-weight:700;line-height:1;margin-bottom:18px;">04</p>
+      <p style="font-size:17pt;color:#1A2B23;font-weight:600;line-height:1.2;margin-bottom:10px;">AI needs structure</p>
+      <p style="font-size:12.5pt;color:#6E7E76;line-height:1.45;">AI is valuable only on structured, traceable operational data — MAAT is building that foundation.</p>
+    </div>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">3</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 4 · THE SOLUTION ═════════════════════════════ -->
+<section class="slide slide--light" id="slide-4">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">The Solution</div>
+  <div class="headline">One workspace, from intent to settlement.</div>
+
+  <!-- Description -->
+  <div style="position:absolute;left:57px;top:148px;width:1161px;">
+    <p style="font-size:13.5pt;color:#6E7E76;line-height:1.45;">MAAT is not another system — it is the layer that connects them. It links commercial intent, delivery work, commitments and settlement, so control flows from revenue to margin. It runs on phone, tablet and desktop — approvals and site capture happen where the work is.</p>
+  </div>
+
+  <!-- INTENT box -->
+  <div style="position:absolute;left:86px;top:259px;width:355px;height:259px;background:#E8F3EE;">
+    <div style="position:absolute;left:29px;top:29px;right:15px;">
+      <p style="font-size:22pt;color:#2C5F4F;font-weight:700;letter-spacing:.05em;margin-bottom:14px;">INTENT</p>
+      <p style="font-size:13pt;color:#1A2B23;line-height:1.5;">Sales &amp; CRM capture commercial intent — leads, opportunities, quotations and commitments.</p>
+    </div>
+  </div>
+
+  <!-- Arrow 1 -->
+  <div style="position:absolute;left:447px;top:345px;width:48px;height:86px;display:flex;align-items:center;justify-content:center;">
+    <span style="font-size:40pt;color:#8FB3A3;line-height:1;">›</span>
+  </div>
+
+  <!-- EXECUTION box -->
+  <div style="position:absolute;left:494px;top:259px;width:355px;height:259px;background:#163528;">
+    <div style="position:absolute;left:29px;top:29px;right:15px;">
+      <p style="font-size:22pt;color:#C19A3B;font-weight:700;letter-spacing:.05em;margin-bottom:14px;">EXECUTION</p>
+      <p style="font-size:13pt;color:#DCE6E0;line-height:1.5;">Projects &amp; procurement turn intent into delivery — phases, tasks, orders and receipts, governed by approvals.</p>
+    </div>
+  </div>
+
+  <!-- Arrow 2 -->
+  <div style="position:absolute;left:855px;top:345px;width:48px;height:86px;display:flex;align-items:center;justify-content:center;">
+    <span style="font-size:40pt;color:#8FB3A3;line-height:1;">›</span>
+  </div>
+
+  <!-- OUTCOME box -->
+  <div style="position:absolute;left:902px;top:259px;width:355px;height:259px;background:#FBF7EC;">
+    <div style="position:absolute;left:29px;top:29px;right:15px;">
+      <p style="font-size:22pt;color:#C19A3B;font-weight:700;letter-spacing:.05em;margin-bottom:14px;">OUTCOME</p>
+      <p style="font-size:13pt;color:#1A2B23;line-height:1.5;">Finance records the result — invoices, payments, allocations, and live cost-against-revenue.</p>
+    </div>
+  </div>
+
+  <!-- Document chain banner -->
+  <div style="position:absolute;left:57px;top:552px;width:1164px;height:86px;background:#E8F3EE;display:flex;align-items:center;padding:0 34px;">
+    <p style="font-size:14pt;color:#1A2B23;line-height:1.5;">Document chain:&ensp;<span style="color:#2C5F4F;font-weight:600;">deal → project → request → order → invoice → payment</span><span style="color:#6E7E76;font-size:13pt;"> — one audit trail for every action.</span></p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">4</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 5 · BEFORE & AFTER ═══════════════════════════ -->
+<section class="slide slide--light" id="slide-5">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Before &amp; After</div>
+  <div class="headline">What changes for the team.</div>
+
+  <!-- BEFORE MAAT -->
+  <div style="position:absolute;left:57px;top:182px;width:571px;height:470px;background:#FDF2EF;">
+    <div style="position:absolute;left:0;top:0;width:8px;height:100%;background:#B4543F;"></div>
+    <div style="position:absolute;left:34px;top:24px;width:504px;">
+      <p style="font-size:18pt;color:#8C3D2C;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:24px;">Before MAAT</p>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:14.5pt;color:#5A2A1E;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(90,42,30,.12);">WhatsApp groups for site decisions</li>
+        <li style="font-size:14.5pt;color:#5A2A1E;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(90,42,30,.12);">Email for approvals and variations</li>
+        <li style="font-size:14.5pt;color:#5A2A1E;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(90,42,30,.12);">Personal Excel files for budgets</li>
+        <li style="font-size:14.5pt;color:#5A2A1E;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(90,42,30,.12);">Paper delivery notes &amp; subcontractor records</li>
+        <li style="font-size:14.5pt;color:#5A2A1E;line-height:1.6;padding:5px 0;">Accounting weeks behind project reality</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- WITH MAAT -->
+  <div style="position:absolute;left:657px;top:182px;width:571px;height:470px;background:#EEF5F1;">
+    <div style="position:absolute;left:0;top:0;width:8px;height:100%;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:34px;top:24px;width:504px;">
+      <p style="font-size:18pt;color:#2C5F4F;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:24px;">With MAAT</p>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:14.5pt;color:#1F4034;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(31,64,52,.12);">One workspace across sales, projects, procurement &amp; finance</li>
+        <li style="font-size:14.5pt;color:#1F4034;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(31,64,52,.12);">One governed approval flow with traceable sign-off</li>
+        <li style="font-size:14.5pt;color:#1F4034;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(31,64,52,.12);">One audit trail linking decisions to documents &amp; payments</li>
+        <li style="font-size:14.5pt;color:#1F4034;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(31,64,52,.12);">One repository for evidence and project history</li>
+        <li style="font-size:14.5pt;color:#1F4034;line-height:1.6;padding:5px 0;">One dashboard for budget, commitments &amp; margin</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">5</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 6 · WHY CUSTOMERS BUY ═══════════════════════ -->
+<section class="slide slide--light" id="slide-6">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Why Customers Buy</div>
+  <div class="headline">Sell money, time and risk.</div>
+
+  <div style="position:absolute;left:57px;top:153px;width:1161px;">
+    <p style="font-size:14pt;color:#6E7E76;line-height:1.4;">MAAT gives each project manager back 5–10 hours a week and stops the costly mistakes — the overruns, the lost disputes, and the approvals no one can trace.</p>
+  </div>
+
+  <!-- Stat boxes -->
+  <div class="stat-box" style="left:57px;top:240px;">
+    <p style="font-size:26pt;color:#C19A3B;font-weight:700;line-height:1.1;">5–10 h<span style="font-size:13pt;color:#8FB3A3;font-weight:400;"> / week</span></p>
+    <p style="font-size:11.5pt;color:#DCE6E0;margin-top:12px;line-height:1.4;">admin &amp; re-keying given back to each PM</p>
+  </div>
+  <div class="stat-box" style="left:354px;top:240px;">
+    <p style="font-size:26pt;color:#C19A3B;font-weight:700;line-height:1.1;">CHF 25–65k<span style="font-size:13pt;color:#8FB3A3;font-weight:400;"> / year</span></p>
+    <p style="font-size:11.5pt;color:#DCE6E0;margin-top:12px;line-height:1.4;">recovered capacity per PM (loaded ~CHF&nbsp;120/h)</p>
+  </div>
+  <div class="stat-box" style="left:650px;top:240px;">
+    <p style="font-size:26pt;color:#C19A3B;font-weight:700;line-height:1.1;">Days → min</p>
+    <p style="font-size:11.5pt;color:#DCE6E0;margin-top:12px;line-height:1.4;">to assemble an evidence pack for a dispute</p>
+  </div>
+  <div class="stat-box" style="left:947px;top:240px;">
+    <p style="font-size:26pt;color:#C19A3B;font-weight:700;line-height:1.1;">4–5 → 1<span style="font-size:13pt;color:#8FB3A3;font-weight:400;"> tools</span></p>
+    <p style="font-size:11.5pt;color:#DCE6E0;margin-top:12px;line-height:1.4;">disconnected systems replaced by one workspace</p>
+  </div>
+
+  <!-- Feature rows -->
+  <div style="position:absolute;left:57px;top:451px;width:1166px;height:40px;display:flex;align-items:center;border-bottom:1px solid #E8EDEB;">
+    <div style="width:15px;height:15px;background:#2C5F4F;border-radius:3px;flex-shrink:0;margin:0 19px 0 5px;"></div>
+    <p style="font-size:13pt;color:#1A2B23;white-space:nowrap;"><strong>Live budget-vs-actual</strong>&ensp;—&ensp;<span style="color:#6E7E76;">Better margins — see a site slip into red while you can still fix it.</span></p>
+  </div>
+  <div style="position:absolute;left:57px;top:499px;width:1166px;height:40px;display:flex;align-items:center;border-bottom:1px solid #E8EDEB;">
+    <div style="width:15px;height:15px;background:#2C5F4F;border-radius:3px;flex-shrink:0;margin:0 19px 0 5px;"></div>
+    <p style="font-size:13pt;color:#1A2B23;white-space:nowrap;"><strong>Procurement workflow</strong>&ensp;—&ensp;<span style="color:#6E7E76;">Lower costs — spend committed only after quote comparison &amp; sign-off.</span></p>
+  </div>
+  <div style="position:absolute;left:57px;top:547px;width:1166px;height:40px;display:flex;align-items:center;border-bottom:1px solid #E8EDEB;">
+    <div style="width:15px;height:15px;background:#2C5F4F;border-radius:3px;flex-shrink:0;margin:0 19px 0 5px;"></div>
+    <p style="font-size:13pt;color:#1A2B23;white-space:nowrap;"><strong>Document repository + audit trail</strong>&ensp;—&ensp;<span style="color:#6E7E76;">Win disputes &amp; stay audit-ready — pull every sign-off in minutes.</span></p>
+  </div>
+  <div style="position:absolute;left:57px;top:595px;width:1166px;height:40px;display:flex;align-items:center;">
+    <div style="width:15px;height:15px;background:#C19A3B;border-radius:3px;flex-shrink:0;margin:0 19px 0 5px;"></div>
+    <p style="font-size:13pt;color:#1A2B23;white-space:nowrap;"><strong>FR / DE / IT · multi-currency · mobile</strong>&ensp;—&ensp;<span style="color:#6E7E76;">Works across Switzerland and on site, from a phone.</span></p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">6</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 7 · COMPETITIVE POSITIONING ═════════════════ -->
+<section class="slide slide--light" id="slide-7">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Competitive Positioning</div>
+  <div class="headline">How MAAT compares.</div>
+
+  <!-- Competitive table -->
+  <table style="position:absolute;left:57px;top:155px;width:1164px;border-collapse:collapse;table-layout:fixed;">
+    <colgroup>
+      <col style="width:375px;">
+      <col style="width:147px;">
+      <col style="width:175px;">
+      <col style="width:175px;">
+      <col style="width:292px;">
+    </colgroup>
+    <thead>
+      <tr style="height:52px;">
+        <td style="background:#1A2B23;color:#fff;font-size:12.5pt;font-weight:600;padding:0 16px;vertical-align:middle;">What matters to the buyer</td>
+        <td style="background:#1A2B23;color:#fff;font-size:12.5pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;">Excel</td>
+        <td style="background:#1A2B23;color:#fff;font-size:12.5pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;">Asana / Monday</td>
+        <td style="background:#1A2B23;color:#fff;font-size:12.5pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;">Procore</td>
+        <td style="background:#2C5F4F;color:#C19A3B;font-size:12.5pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;letter-spacing:.1em;text-transform:uppercase;">MAAT</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height:48px;">
+        <td style="background:#fff;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Real-time project profitability</td>
+        <td style="background:#fff;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#fff;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#fff;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#2C5F4F;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#F8FAF9;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Procurement &amp; cost control</td>
+        <td style="background:#F8FAF9;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#F8FAF9;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#F8FAF9;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#245249;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#fff;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Approvals &amp; governance</td>
+        <td style="background:#fff;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#fff;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#fff;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#2C5F4F;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#F8FAF9;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Document &amp; audit trail</td>
+        <td style="background:#F8FAF9;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#F8FAF9;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#8FA89A;color:#fff;font-size:12pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Yes</td>
+        <td style="background:#245249;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#fff;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Finance link to margin</td>
+        <td style="background:#fff;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#fff;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#fff;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#2C5F4F;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#F8FAF9;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;border-bottom:1px solid #E8EDEB;">FR / DE / IT in one tenant</td>
+        <td style="background:#F8FAF9;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#F8FAF9;color:#8A6D1F;font-size:11pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">Partial</td>
+        <td style="background:#F8FAF9;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #E8EDEB;">—</td>
+        <td style="background:#245249;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;border-bottom:1px solid #3a7a67;">Yes</td>
+      </tr>
+      <tr style="height:48px;">
+        <td style="background:#fff;color:#1A2B23;font-size:12.5pt;padding:0 16px;vertical-align:middle;">Mobile site capture &amp; approvals</td>
+        <td style="background:#fff;color:#6E7E76;font-size:12pt;padding:0 16px;text-align:center;vertical-align:middle;">—</td>
+        <td style="background:#E8F3EE;color:#2C5F4F;font-size:12pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;">Yes</td>
+        <td style="background:#E8F3EE;color:#2C5F4F;font-size:12pt;font-weight:600;padding:0 16px;text-align:center;vertical-align:middle;">Yes</td>
+        <td style="background:#2C5F4F;color:#fff;font-size:12pt;font-weight:700;padding:0 16px;text-align:center;vertical-align:middle;">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Swiss differentiators note -->
+  <div style="position:absolute;left:57px;top:580px;width:1164px;height:67px;display:flex;align-items:center;padding:0 16px;background:#F8FAF9;border-top:2px solid #E8EDEB;">
+    <p style="font-size:11pt;color:#6E7E76;line-height:1.4;"><strong style="color:#2C5F4F;">Swiss differentiators:</strong> built for Swiss project-based SMEs · multilingual FR/DE/IT in one tenant · Swiss/EU data residency · designed for Swiss compliance · simpler &amp; cheaper than enterprise ERP or Procore.</p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">7</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 8 · FOUNDER & ORIGIN ═════════════════════════ -->
+<section class="slide slide--light" id="slide-8">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Founder &amp; Origin</div>
+  <div class="headline">We didn't theorize the problem — we lived it.</div>
+
+  <!-- Left dark box: HARMAR ORIGIN -->
+  <div style="position:absolute;left:57px;top:187px;width:576px;height:460px;background:#163528;padding:24px 34px;">
+    <p style="font-size:12pt;color:#C19A3B;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;">The HARMAR Origin</p>
+    <p style="font-size:13pt;color:#DCE6E0;line-height:1.5;margin-bottom:22px;">MAAT was born from two years running a multi-year construction &amp; property project in Bahia, Brazil — planning, procurement, supplier coordination, documentation and financial control. The fragmentation was lived, then generalised into a platform.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;">
+      <div>
+        <p style="font-size:25pt;color:#C19A3B;font-weight:700;line-height:1;">35+</p>
+        <p style="font-size:11.5pt;color:#8FB3A3;margin-top:4px;">suppliers coordinated</p>
+      </div>
+      <div>
+        <p style="font-size:25pt;color:#C19A3B;font-weight:700;line-height:1;">400+</p>
+        <p style="font-size:11.5pt;color:#8FB3A3;margin-top:4px;">invoices processed</p>
+      </div>
+      <div>
+        <p style="font-size:25pt;color:#C19A3B;font-weight:700;line-height:1;">2,000+</p>
+        <p style="font-size:11.5pt;color:#8FB3A3;margin-top:4px;">documents &amp; evidence files</p>
+      </div>
+      <div>
+        <p style="font-size:25pt;color:#C19A3B;font-weight:700;line-height:1;">Multiple</p>
+        <p style="font-size:11.5pt;color:#8FB3A3;margin-top:4px;">disciplines in parallel</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Founder-market fit -->
+  <div style="position:absolute;left:662px;top:196px;width:556px;">
+    <p style="font-size:19pt;color:#1A2B23;font-weight:600;margin-bottom:20px;">Founder-market fit</p>
+    <ul style="list-style:none;padding:0;">
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;border-bottom:1px solid #E8EDEB;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#2C5F4F;border-radius:50%;display:block;"></span>
+        EPFL-trained engineer, 20+ years of management
+      </li>
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;border-bottom:1px solid #E8EDEB;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#2C5F4F;border-radius:50%;display:block;"></span>
+        Reliability engineering &amp; complex industrial process background
+      </li>
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;border-bottom:1px solid #E8EDEB;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#2C5F4F;border-radius:50%;display:block;"></span>
+        SAP integration, procurement, finance &amp; project execution
+      </li>
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;border-bottom:1px solid #E8EDEB;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#2C5F4F;border-radius:50%;display:block;"></span>
+        Energy management &amp; large international project delivery
+      </li>
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;border-bottom:1px solid #E8EDEB;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#C19A3B;border-radius:50%;display:block;"></span>
+        Personally executed the multi-year HARMAR project
+      </li>
+      <li style="font-size:13.5pt;color:#1A2B23;line-height:1.5;padding:8px 0 8px 22px;position:relative;">
+        <span style="position:absolute;left:0;top:13px;width:8px;height:8px;background:#C19A3B;border-radius:50%;display:block;"></span>
+        Built MAAT because no tool gave end-to-end revenue-to-margin control
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">8</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 9 · VALIDATION ══════════════════════════════ -->
+<section class="slide slide--light" id="slide-9">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Validation</div>
+  <div class="headline">Built and shipped — proof comes next.</div>
+
+  <!-- Product Maturity label -->
+  <p style="position:absolute;left:57px;top:163px;font-size:12pt;color:#2C5F4F;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">Product Maturity</p>
+
+  <!-- Product Maturity stat boxes -->
+  <div style="position:absolute;left:57px;top:196px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">112</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">doc pages</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:354px;top:196px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">6</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">UI locales in parity</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:650px;top:196px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">17</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">approval workflows</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:947px;top:196px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#2C5F4F;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">19</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">document families</p>
+    </div>
+  </div>
+
+  <!-- Engineering Depth label -->
+  <p style="position:absolute;left:57px;top:345px;font-size:12pt;color:#2C5F4F;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">Engineering Depth&ensp;<span style="color:#8FB3A3;font-weight:400;text-transform:none;letter-spacing:0;font-size:11pt;">(shipped — for technical diligence)</span></p>
+
+  <!-- Engineering stat boxes -->
+  <div style="position:absolute;left:57px;top:379px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#8FB3A3;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">777</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">DB migrations shipped</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:354px;top:379px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#8FB3A3;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">162</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">PostgreSQL tables</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:650px;top:379px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#8FB3A3;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">317</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">server functions (RPCs)</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:947px;top:379px;width:274px;height:129px;background:#F8FAF9;">
+    <div style="position:absolute;left:0;top:0;width:9px;height:100%;background:#8FB3A3;"></div>
+    <div style="position:absolute;left:28px;top:12px;">
+      <p style="font-size:34pt;color:#1A2B23;font-weight:700;line-height:1.1;">117</p>
+      <p style="font-size:11.5pt;color:#6E7E76;margin-top:5px;">translation namespaces</p>
+    </div>
+  </div>
+
+  <!-- Note banner -->
+  <div class="banner" style="left:57px;top:542px;width:1164px;height:100px;display:flex;align-items:center;">
+    <p style="font-size:12.5pt;color:#DCE6E0;line-height:1.5;">These reduce founder &amp; execution risk — they are not commercial traction. The next milestone is three Swiss construction design partners, signed letters of intent, and measured time saved per PM. That's what this round funds.</p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">9</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 10 · MARKET, MODEL & GTM ════════════════════ -->
+<section class="slide slide--light" id="slide-10">
+
+  <div class="badge badge--teal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Market, Model &amp; GTM</div>
+  <div class="headline">A big, underserved home market.</div>
+
+  <!-- TAM bar -->
+  <div style="position:absolute;left:57px;top:148px;width:336px;height:96px;background:#163528;display:flex;align-items:center;padding:0 16px;">
+    <span style="font-size:17pt;color:#fff;font-weight:700;">CHF 6.5B&ensp;</span><span style="font-size:12pt;color:#8FB3A3;font-weight:600;">TAM</span>
+  </div>
+  <div style="position:absolute;left:403px;top:174px;width:240px;">
+    <p style="font-size:11.5pt;color:#6E7E76;line-height:1.4;">DACH project-based SME software spend</p>
+  </div>
+
+  <!-- SAM bar -->
+  <div style="position:absolute;left:57px;top:256px;width:259px;height:96px;background:#2C5F4F;display:flex;align-items:center;padding:0 16px;">
+    <span style="font-size:17pt;color:#fff;font-weight:700;">CHF 0.9B&ensp;</span><span style="font-size:12pt;color:#8FB3A3;font-weight:600;">SAM</span>
+  </div>
+  <div style="position:absolute;left:327px;top:281px;width:240px;">
+    <p style="font-size:11.5pt;color:#6E7E76;line-height:1.4;">Swiss construction &amp; engineering SMEs</p>
+  </div>
+
+  <!-- SOM bar -->
+  <div style="position:absolute;left:57px;top:363px;width:187px;height:96px;background:#C19A3B;display:flex;align-items:center;padding:0 16px;">
+    <span style="font-size:17pt;color:#5A4A12;font-weight:700;">CHF 5.4M</span>
+  </div>
+  <div style="position:absolute;left:257px;top:376px;width:140px;">
+    <p style="font-size:12pt;color:#5A4A12;font-weight:700;margin-bottom:3px;">SOM</p>
+    <p style="font-size:11.5pt;color:#6E7E76;line-height:1.3;">Obtainable ARR within 3 years</p>
+  </div>
+
+  <!-- Pricing header -->
+  <p style="position:absolute;left:672px;top:148px;font-size:16pt;color:#1A2B23;font-weight:600;">Per-seat SaaS pricing</p>
+
+  <!-- Tier: CHF 29 Core -->
+  <div style="position:absolute;left:672px;top:182px;width:547px;height:74px;background:#F8FAF9;border-left:5px solid #2C5F4F;display:flex;align-items:center;">
+    <div style="width:155px;padding-left:16px;"><span style="font-size:17pt;color:#2C5F4F;font-weight:700;">CHF 29</span></div>
+    <div><p style="font-size:12.5pt;color:#1A2B23;font-weight:600;">Core&ensp;<span style="font-size:11pt;color:#6E7E76;font-weight:400;">workspace, repository, basic approvals</span></p></div>
+  </div>
+
+  <!-- Tier: CHF 59 Full -->
+  <div style="position:absolute;left:672px;top:265px;width:547px;height:74px;background:#F8FAF9;border-left:5px solid #2C5F4F;display:flex;align-items:center;">
+    <div style="width:155px;padding-left:16px;"><span style="font-size:17pt;color:#2C5F4F;font-weight:700;">CHF 59</span></div>
+    <div><p style="font-size:12.5pt;color:#1A2B23;font-weight:600;">Full&ensp;<span style="font-size:11pt;color:#6E7E76;font-weight:400;">procurement, finance, multi-currency, workflows</span></p></div>
+  </div>
+
+  <!-- Tier: Custom Scale -->
+  <div style="position:absolute;left:672px;top:348px;width:547px;height:74px;background:#F8FAF9;border-left:5px solid #8FB3A3;display:flex;align-items:center;">
+    <div style="width:155px;padding-left:16px;"><span style="font-size:17pt;color:#2C5F4F;font-weight:700;">Custom</span></div>
+    <div><p style="font-size:12.5pt;color:#1A2B23;font-weight:600;">Scale&ensp;<span style="font-size:11pt;color:#6E7E76;font-weight:400;">multi-entity, SSO, governance, SLAs</span></p></div>
+  </div>
+
+  <!-- ACV note -->
+  <div style="position:absolute;left:672px;top:430px;width:547px;height:38px;display:flex;align-items:center;background:#EEF5F1;padding:0 16px;">
+    <p style="font-size:11pt;color:#6E7E76;">~CHF 13,500 ACV &nbsp;·&nbsp; ~25 paid users / customer &nbsp;·&nbsp; ~400 customers targeted in 3 years</p>
+  </div>
+
+  <!-- GTM banner -->
+  <div class="banner" style="left:57px;top:486px;width:1164px;height:128px;padding:14px 34px;">
+    <p style="font-size:12pt;color:#C19A3B;font-weight:700;margin-bottom:7px;">Go-to-market</p>
+    <p style="font-size:11.5pt;color:#DCE6E0;line-height:1.5;">Land 3 design partners founder-led → turn them into named references → use associations (SBV, SSE, usic) &amp; fairs (Swissbau) for credibility → let referrals compound in a tight-knit regional industry. Predictable monthly SaaS pricing removes the SME budget objection.</p>
+  </div>
+
+  <div class="footer-brand">MAAT — Business Control Platform</div>
+  <div class="footer-num">10</div>
+</section>
+
+
+<!-- ════════════════════════════════ SLIDE 11 · VISION & FUNDING ASK ══════════════════ -->
+<section class="slide slide--dark" id="slide-11">
+
+  <!-- Decorative circle -->
+  <div class="deco" style="left:979px;top:-192px;width:576px;height:576px;background:#2C5F4F;opacity:.20;"></div>
+
+  <!-- Header badge: gold -->
+  <div class="badge badge--gold">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.99 141.99" width="28" height="28">
+      <rect fill="#223f31" width="141.99" height="141.99"/>
+      <path fill="#dfe2e0" d="M33.84,99.41v-56.83h10.65l26.31,18.44h.4l26.31-18.44h10.65v56.83h-12.72v-40.94l-18.04,12.08v28.85h-12.72v-28.85l-18.12-12.08v40.94h-12.72Z"/>
+    </svg>
+  </div>
+
+  <div class="label">Vision &amp; Funding Ask</div>
+
+  <!-- Headline -->
+  <div style="position:absolute;left:136px;top:69px;width:1090px;">
+    <p style="font-size:25pt;color:#fff;font-weight:400;line-height:1.15;">The operating system for Swiss construction.</p>
+  </div>
+
+  <!-- Vision path -->
+  <div style="position:absolute;left:58px;top:168px;width:1152px;height:38px;display:flex;align-items:center;">
+    <p style="font-size:14pt;color:#8FB3A3;">Switzerland &nbsp;›&nbsp; DACH (Germany &amp; Austria) &nbsp;›&nbsp; Europe — project-based SMEs</p>
+  </div>
+
+  <!-- THE ASK box -->
+  <div style="position:absolute;left:58px;top:226px;width:566px;height:230px;background:rgba(255,255,255,.10);padding:19px 34px;">
+    <p style="font-size:12pt;color:#C19A3B;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;">The Ask</p>
+    <p style="font-size:42pt;color:#fff;font-weight:700;line-height:1;margin-bottom:8px;">CHF 500k</p>
+    <p style="font-size:14pt;color:#6E7E76;margin-bottom:10px;">18-month runway</p>
+    <p style="font-size:11.5pt;color:#DCE6E0;line-height:1.45;">To move from founder-led creation &amp; HARMAR validation to external commercial validation with Swiss design partners. ~50 customers at modeled ACV approaches CHF 0.7M ARR — de-risking a priced Series A.</p>
+  </div>
+
+  <!-- Use of funds -->
+  <div style="position:absolute;left:653px;top:230px;width:557px;">
+    <p style="font-size:16pt;color:#fff;font-weight:600;margin-bottom:18px;">Use of funds</p>
+    <div style="display:flex;align-items:baseline;margin-bottom:12px;">
+      <span style="font-size:17pt;color:#C19A3B;font-weight:700;width:72px;flex-shrink:0;">45%</span>
+      <span style="font-size:12.5pt;color:#DCE6E0;line-height:1.35;">Product, onboarding &amp; design-partner hardening</span>
+    </div>
+    <div style="display:flex;align-items:baseline;margin-bottom:12px;">
+      <span style="font-size:17pt;color:#C19A3B;font-weight:700;width:72px;flex-shrink:0;">35%</span>
+      <span style="font-size:12.5pt;color:#DCE6E0;line-height:1.35;">Sales, founder-led design partners &amp; first GTM hires</span>
+    </div>
+    <div style="display:flex;align-items:baseline;margin-bottom:12px;">
+      <span style="font-size:17pt;color:#C19A3B;font-weight:700;width:72px;flex-shrink:0;">10%</span>
+      <span style="font-size:12.5pt;color:#DCE6E0;line-height:1.35;">Infrastructure, security &amp; hosting</span>
+    </div>
+    <div style="display:flex;align-items:baseline;">
+      <span style="font-size:17pt;color:#C19A3B;font-weight:700;width:72px;flex-shrink:0;">10%</span>
+      <span style="font-size:12.5pt;color:#DCE6E0;line-height:1.35;">Contingency &amp; compliance buffer</span>
+    </div>
+  </div>
+
+  <!-- 18-month milestones band -->
+  <div style="position:absolute;left:58px;top:509px;width:1164px;height:144px;background:#2C5F4F;padding:16px 33px;">
+    <p style="font-size:11.5pt;color:#fff;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;">18-Month Milestones</p>
+    <div style="display:flex;gap:0;height:80px;">
+      <div style="flex:1;padding-right:20px;border-right:1px solid rgba(255,255,255,.25);display:flex;gap:12px;align-items:center;">
+        <div style="width:28px;height:28px;background:#C19A3B;border-radius:50%;flex-shrink:0;"></div>
+        <p style="font-size:12.5pt;color:#fff;line-height:1.3;">3 design partners live</p>
+      </div>
+      <div style="flex:1;padding:0 20px;border-right:1px solid rgba(255,255,255,.25);display:flex;gap:12px;align-items:center;">
+        <div style="width:28px;height:28px;background:#C19A3B;border-radius:50%;flex-shrink:0;"></div>
+        <p style="font-size:12.5pt;color:#fff;line-height:1.3;">First 10 paying customers</p>
+      </div>
+      <div style="flex:1;padding:0 20px;border-right:1px solid rgba(255,255,255,.25);display:flex;gap:12px;align-items:center;">
+        <div style="width:28px;height:28px;background:#C19A3B;border-radius:50%;flex-shrink:0;"></div>
+        <p style="font-size:12.5pt;color:#fff;line-height:1.3;">Repeatable sales motion</p>
+      </div>
+      <div style="flex:1;padding-left:20px;display:flex;gap:12px;align-items:center;">
+        <div style="width:28px;height:28px;background:#8FB3A3;border-radius:50%;flex-shrink:0;"></div>
+        <p style="font-size:12.5pt;color:#fff;line-height:1.3;">50 customers · DACH underway</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</div><!-- /.deck -->
+</body>
+</html>
